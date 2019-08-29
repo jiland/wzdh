@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{ padding:0;margin:0;list-style:none}
+        #search{
+            width: 850px;
+            height: 50px;
+            /* float: left; */
+            margin: 0 auto;
+            /* margin-left: 100px; */
+            margin-top: 100px;
+        }
+        .main-logo{
+            float: left;
+            margin-right: 10px;
+        }
+        .textInput{
+            float: left;
+            /* margin-right: 20px; */
+            padding-left: 5px;
+        }
+        .submitWrapper{
+            float: left;
+        }
+        .textInput{
+            width: 500px;
+            height: 40px;
+        }
+        .submitInput{
+            width: 120px;
+            height: 40px;
+            border: 2px solid #3083FF;
+            background-color: #3083FF;
+            outline: none;
+            box-sizing: content-box;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .menu{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .menu li{
+            width: 200px;
+            height: 100px;
+            float: left;
+            background: grey;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="search"
+      class="search hao123-indexsearchlist1"
+      alog-alias="search"
+      data-hooks="hao123-search"
+      data-flag="hao123-indexsearchlist1"
+      data-open="2"
+    >
+      <div class="g-ib main-logo" monkey="baidulogo">
+        <a
+          id="search_logolink"
+          class="link-hook"
+          href="http://www.baidu.com/?tn=sitehao123&amp;H123Tmp=nunew11"
+          ><img
+            src="https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-26/352f1d243122cf52462a2e6cdcb5ed6d.png"
+            width="128px"
+            height="40px"
+            class="zllogo"
+        /></a>
+      </div>
+      <!-- <a
+        href="javascript:;"
+        class="tabs-toggle tabs-toggle-hook"
+        monkey="searchToggle"
+        hidefocus="true"
+        ><i class="arrow">展开</i><span class="tab-curr">网页</span></a
+      >
+      <div class="right tabs tabs-hook" monkey="searchTab" alog-alias="search">
+        <a
+          class="tab tab-hook s-bg20 g-fc5 g-fc5h curr curr-hook"
+          data-tab="web"
+          href="http://www.hao123.com"
+          hidefocus="true"
+          >网页</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="music"
+          href="http://music.baidu.com"
+          hidefocus="true"
+          >音乐</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="video"
+          href="http://v.baidu.com"
+          hidefocus="true"
+          >视频</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="image"
+          href="http://image.baidu.com"
+          hidefocus="true"
+          >图片</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="tieba"
+          href="http://tieba.baidu.com"
+          hidefocus="true"
+          >贴吧</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="zhidao"
+          href="http://zhidao.baidu.com"
+          hidefocus="true"
+          >知道</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="news"
+          href="http://news.baidu.com"
+          hidefocus="true"
+          >新闻</a
+        ><a
+          class="tab tab-hook g-fc0"
+          data-tab="map"
+          href="http://map.baidu.com"
+          hidefocus="true"
+          >地图</a
+        ><a class="tab more g-fc0" style="" href="http://www.baidu.com/more/"
+          >更多&gt;&gt;</a
+        >
+      </div> -->
+      <form
+        data-hook="searchForm"
+        action="https://www.baidu.com/s"
+        class="g-ib searchForm form-hook"
+        target="_blank"
+      >
+        <div class="hidden-params params-hook">
+          <input
+            id="search_tn"
+            type="hidden"
+            value="sitehao123"
+            name="tn"
+          /><input type="hidden" value="utf-8" name="ie" />
+        </div>
+
+        <div
+          class="g-ib textWrapper shadow-hook wrapper-hook"
+          data-hook="inputBox"
+        >
+          <input
+            data-hook="searchInput"
+            placeholder="请输入搜索内容"
+            name="word"
+            value=""
+            class="textInput input-hook"
+            type="text"
+            autocomplete="off"
+          />
+          <!-- <a
+            class="hotword hotword-hook"
+            href="http://top.baidu.com/buzz?b=1"
+            hidefocus="true"
+            ><span class="hot-num" style="height: 18px; top: 6px; opacity: 1;"
+              >5</span
+            ></a
+          > -->
+          <!-- <div class="suggest suggest-search g-bg11 g-br9">
+            <div class="header-hook detail"></div>
+            <ul class="list-hook"></ul>
+            <div class="footer-hook"></div>
+          </div> -->
+        </div>
+        <div class="g-ib g-cp submitWrapper">
+          <input
+            data-hook="searchSubmit"
+            alog-action="search"
+            class="g-cp submitInput button-hook"
+            type="submit"
+            value="百度一下"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>
+                <img src="" alt="">
+                <a href="https://github.com/"></a>
+            </li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+        </ul>
+    </div>
+  </body>
+</html>
