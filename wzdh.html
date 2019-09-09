@@ -73,12 +73,27 @@
           width: 50px;
           height: 50px;
         }
+        .footMenu{
+          border-top: 5px solid #aac6c9;
+          margin-top:150px
+        }
         .footMenu ul{
-          margin: 20px 50px 0;
+          /* margin: 20px 50px 0; */
+          margin: 10px 50px 0;
         }
         .footMenu ul li{
           float: left;
-          background: grey;
+          /* background: grey; */
+          width: 80px;
+          text-align: center;
+          
+        }
+        img{
+          cursor: pointer;
+        }
+        .footMenu li a{
+          /* color:#14657b */
+          color:#569da6
         }
     </style>
   </head>
@@ -104,66 +119,6 @@
             class="zllogo"
         /></a>
       </div>
-      <!-- <a
-        href="javascript:;"
-        class="tabs-toggle tabs-toggle-hook"
-        monkey="searchToggle"
-        hidefocus="true"
-        ><i class="arrow">展开</i><span class="tab-curr">网页</span></a
-      >
-      <div class="right tabs tabs-hook" monkey="searchTab" alog-alias="search">
-        <a
-          class="tab tab-hook s-bg20 g-fc5 g-fc5h curr curr-hook"
-          data-tab="web"
-          href="http://www.hao123.com"
-          hidefocus="true"
-          >网页</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="music"
-          href="http://music.baidu.com"
-          hidefocus="true"
-          >音乐</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="video"
-          href="http://v.baidu.com"
-          hidefocus="true"
-          >视频</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="image"
-          href="http://image.baidu.com"
-          hidefocus="true"
-          >图片</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="tieba"
-          href="http://tieba.baidu.com"
-          hidefocus="true"
-          >贴吧</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="zhidao"
-          href="http://zhidao.baidu.com"
-          hidefocus="true"
-          >知道</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="news"
-          href="http://news.baidu.com"
-          hidefocus="true"
-          >新闻</a
-        ><a
-          class="tab tab-hook g-fc0"
-          data-tab="map"
-          href="http://map.baidu.com"
-          hidefocus="true"
-          >地图</a
-        ><a class="tab more g-fc0" style="" href="http://www.baidu.com/more/"
-          >更多&gt;&gt;</a
-        >
-      </div> -->
       <form
         data-hook="searchForm"
         action="https://www.baidu.com/s"
@@ -192,19 +147,6 @@
             type="text"
             autocomplete="off"
           />
-          <!-- <a
-            class="hotword hotword-hook"
-            href="http://top.baidu.com/buzz?b=1"
-            hidefocus="true"
-            ><span class="hot-num" style="height: 18px; top: 6px; opacity: 1;"
-              >5</span
-            ></a
-          > -->
-          <!-- <div class="suggest suggest-search g-bg11 g-br9">
-            <div class="header-hook detail"></div>
-            <ul class="list-hook"></ul>
-            <div class="footer-hook"></div>
-          </div> -->
         </div>
         <div class="g-ib g-cp submitWrapper">
           <input
@@ -221,7 +163,7 @@
         <ul>
             <li>
                 <div class="imgdiv">
-                  <img src="./img/github.jpg" alt="">
+                  <img onclick="newOpen('https://github.com')" src="./img/github.jpg" alt="">
                 
                 </div>
                 <div class="imga">
@@ -230,7 +172,7 @@
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/bd.jpg" alt="">
+                <img onclick="newOpen('https://www.baidu.com/')" src="./img/bd.jpg" alt="">
               
               </div>
               <div class="imga">
@@ -239,7 +181,7 @@
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/bili.jpg" alt="">
+                <img onclick="newOpen('https://www.bilibili.com/')" src="./img/bili.jpg" alt="">
               
               </div>
               <div class="imga">
@@ -248,7 +190,7 @@
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/163.jpg" alt="">
+                <img  onclick="newOpen('https://mail.163.com/')" src="./img/163.jpg" alt="">
               
               </div>
               <div class="imga">
@@ -257,89 +199,105 @@
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/aqy.jpg" alt="">
+                <img onclick="newOpen('https://www.iqiyi.com/')" src="./img/aqy.jpg" alt="">
               
               </div>
               <div class="imga">
-                  <!-- <a href="https://github.com/">github</a> -->
-                  <span>爱奇艺</span>
+                  <a href="https://www.iqiyi.com/" title="爱奇艺视频" target="_blank">爱奇艺</a>
               </div>
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/tb.jpg" alt="">
-              
+                <img onclick="newOpen('https://www.taobao.com/')" src="./img/tb.jpg" alt="">
               </div>
               <div class="imga">
-                  <!-- <a href="https://github.com/">github</a> -->
-                  <span>淘宝</span>
+                  <a href="https://www.taobao.com/" title="淘宝" target="_blank">淘宝</a>
               </div>
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/dy.jpg" alt="">
+                <img onclick="newOpen('https://www.douyu.com/')" src="./img/dy.jpg" alt="">
               
               </div>
               <div class="imga">
-                  <!-- <a href="https://github.com/">github</a> -->
-                  <span>斗鱼</span>
+                  <a href="https://www.douyu.com/" title="斗鱼TV" target="_blank">斗鱼</a>
               </div>
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/1.png" alt="">
+                <img onclick="newOpen('http://www.ifeng.com/')" src="./img/1.png" alt="">
               
               </div>
               <div class="imga">
-                  <!-- <a href="https://github.com/">github</a> -->
-                  <span>1</span>
+                  <a href="http://www.ifeng.com/" title="斗鱼TV" target="_blank">凤凰网</a>
               </div>
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/2.png" alt="">
+                <img  onclick="newOpen('https://www.dytt8.net/')" src="./img/2.png" alt="">
               
               </div>
               <div class="imga">
-                  <!-- <a href="https://github.com/">github</a> -->
-                  <span>电影天堂</span>
+                  <a href="https://www.dytt8.net/" title="电影天堂" target="_blank">电影天堂</a>
               </div>
             </li>
             <li>
               <div class="imgdiv">
-                <img src="./img/3.png" alt="">
+                <img onclick="newOpen('https://leetcode-cn.com/')" src="./img/3.png" alt="">
               
               </div>
               <div class="imga">
-                  <!-- <a href="https://github.com/">github</a> -->
-                  <span>斗鱼</span>
+                  <a href="https://leetcode-cn.com/" title="力扣" target="_blank">力扣</a>
               </div>
             </li>
         </ul>
     </div>
     <div class="footMenu">
       <ul>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
+        <li>
+            <a href="https://www.tianyancha.com/"  target="_blank">天眼查</a>
+        </li>
+        <li>
+            <a href="http://www.gsxt.gov.cn/index.html"  target="_blank">企业信用</a>
+        </li>
+        <li>
+            <a href="https://www.xiaoheihe.cn/home"  target="_blank">小黑盒</a>
+        </li>
+        <li>
+            <a href="https://www.zhipin.com/"  target="_blank">BOSS</a>
+        </li>
+        <li>
+            <a href="https://juejin.im/"  target="_blank">掘金</a>
+        </li>
+        <li>
+            <a href="https://element.eleme.cn/#/zh-CN/component/installation"  target="_blank">ElementUi</a>
+        </li>
+        <li>
+            <a href="http://www.carrotchou.blog/"  target="_blank">胡萝卜</a>
+        </li>
+        <li>
+            <a href="http://steamdb.sinaapp.com/" title="steam游戏查询" target="_blank">steamdb</a>
+        </li>
+        <li>
+            <a href="https://steamdb.info/" title="steam游戏查询" target="_blank">steamdb</a>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </div>
   </body>
 </html>
+<script>
+  function newOpen (dz){
+    window.open(dz); 
+  }
+</script>
